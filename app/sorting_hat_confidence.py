@@ -17,4 +17,6 @@ def determine_house_by_confidence(confidence):
         return "Invalid score"
     elif confidence < 0:
         return "Invalid score"
+    elif confidence < 4:
+        return "Slytherin"
     # Remember to return values/variables rather than printing them
