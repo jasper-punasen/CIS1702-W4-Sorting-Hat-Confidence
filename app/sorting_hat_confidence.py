@@ -15,4 +15,6 @@ def determine_house_by_confidence(confidence):
     # You should not need and / or for this challenge.
     if confidence > 10:
         return "Invalid score"
+    elif confidence < 0:
+        return "Invalid score"
     # Remember to return values/variables rather than printing them
