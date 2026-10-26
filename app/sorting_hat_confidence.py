@@ -13,5 +13,6 @@ def determine_house_by_confidence(confidence):
     # TODO: Write your if / elif / else logic here.
     # Use comparison operators (>, <, ==, >=, <=) only.
     # You should not need and / or for this challenge.
-    pass
+    if confidence > 10:
+        return "Invalid score"
     # Remember to return values/variables rather than printing them
