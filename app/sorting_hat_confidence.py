@@ -15,13 +15,22 @@ def determine_house_by_confidence(confidence):
     # You should not need and / or for this challenge.
     if confidence > 10:
         return "Invalid score"
+    
     elif confidence < 0:
         return "Invalid score"
+    
     elif confidence >= 8:
             return "Gryffindor"
+    
     elif confidence <= 7:
-        if confidence < 4:
-            return "Slytherin"
+        
+        if confidence <= 5:
+            
+            if confidence < 4:
+                return "Slytherin"
+            
+            return "Hufflepuff"
+        
         return "Ravenclaw"
     
     # Remember to return values/variables rather than printing them
